@@ -1,0 +1,383 @@
+@font-face {
+    font-family: Agam ;
+    src: url(./Gilroy-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Agam ;
+}
+
+*::selection{
+    
+    color: #F7F7F7 ;
+    background-color: black;
+}
+
+html,body{
+     
+     width : 100% ; 
+     height : 100% ; 
+
+}
+
+#main{
+    position: relative;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+#page1{
+    
+     min-height: 100vh ;
+     position: relative;
+     width: 100% ;
+     padding: 0 1vw ;
+     padding-top: 20vh ;
+}
+
+#page1 h1{
+     
+     font-size: 16vw ;
+     text-transform: uppercase ;
+     font-family: futura ;
+     line-height: 1 ;
+     text-align: center;
+     letter-spacing: -10px ;
+     
+}
+
+
+
+#head{
+    position: fixed ;
+    width : 100vw ; 
+    height: 6vw ;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw ;
+    z-index: 99 ;
+}
+
+#nav-pt1{
+    height: 11.2vh ;
+    width: 100% ;
+    line-height: 1;
+    overflow: hidden;
+}
+
+#nav-pt1 #twogoodlogo{
+    display: block ;
+    padding-bottom: 2px;
+}
+
+#nav-pt2{
+    display: flex;
+     gap :8vh ;
+}
+
+#icons{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap :6vh ;
+    padding: 5px 30px ;
+    border-radius: 20px ;
+    height: 5vh ;
+    font-size: large;
+    background-color: #F7F7F7;
+}
+
+#navlink{
+     display: flex ;
+     gap:6vh ;
+     font-size: large ;
+     height: 5vh;
+     padding: 5px 30px ;
+
+}
+
+#navlink a{
+   
+    text-decoration: none ; 
+    color: black;
+    text-transform: capitalize;
+}
+
+
+#video-container{
+     margin-top: 1vw ;
+     position:  relative ;
+    
+}
+
+#video-container video{
+    width: 100% ;
+    min-height: 90vh ;
+    object-fit: cover;
+}
+
+#video1{
+
+    color: white;
+    background-color: black;
+    font-family: futura ;
+    padding: 2vw 1.5vw ;
+    position: fixed;
+    border-radius: 50% ;
+    font-size: 1vw;
+    opacity: 0;
+    scale : 0 ; 
+}
+
+#page2{
+     
+    min-height: 100vh ;
+    width : 100% ;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 1vh 1vw ;
+}
+
+.elem{
+
+    height: 100%;
+    width: 33% ;
+    overflow:  hidden ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.elem img{
+
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover;
+    scale: 1.1 ;
+   
+
+}
+
+.imgmenu{
+
+    width: 25vw ;
+    position : absolute ;
+    z-index: 9 ;
+    height: 5vh ;
+    border-radius: 20px ; 
+    background-color: aquamarine ; 
+    transform: translate(-50%,-50%);
+    top : 50% ;
+}
+
+.imgmenu:hover{
+   
+    width: 20vw ;
+    z-index: 9 ; 
+    border-radius: 20px ; 
+    background-color: aquamarine ; 
+    height: 40vh ;
+    margin-bottom: 30px ;
+     
+}
+
+#page3{  
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: space-evenly ;
+     flex-wrap: wrap;
+     position: relative;
+}
+
+#page3 .child{
+     
+     width: 35vw ;
+     height: 55vh ;
+     margin-top: 3vw ;
+     display: flex;
+     justify-content: center ;
+     align-items: center;
+}
+
+.child img{
+     
+     height: 100% ;
+}
+
+#cursor{
+
+     height: 35vh ;
+     width: 18vw ;
+     background-color: aqua;
+     border-radius: 50% ;
+     position: absolute ;
+     z-index: 9 ;
+     opacity: 0.2;
+     scale: 0 ;
+     transform: translate(-50%,-50%);
+    
+}
+
+
+@media (max-width : 600px) {
+
+
+    #page1 h1{
+     
+        font-size: 16vw ;
+        text-transform: uppercase ;
+        font-family: futura ;
+        line-height: 1 ;
+        text-align: center;
+        letter-spacing: -6px ;
+        
+   }
+
+   
+   #video-container video{
+    width: 100% ;
+    min-height: 45vh ;
+    object-fit: cover;
+  }
+
+   #page1{
+    
+    min-height: 80vh ;
+    position: relative;
+    width: 100% ;
+    padding: 0 1vw ;
+    padding-top: 20vh ;
+  }
+
+  #video1{
+
+    color: white;
+    background-color: black;
+    font-family: futura ;
+    padding: 2vw 1.5vw ;
+    position: fixed;
+    border-radius: 50% ;
+    font-size: 1vw;
+    opacity: 0;
+    scale : 0 ; 
+}
+
+  #page2{
+     
+    min-height: 100vh ;
+    width : 100% ;
+    display: flex;
+    padding: 1vh 1vw ;
+    flex-direction: column ;
+    gap: 5px ;
+}
+
+.elem{
+
+    height: 95vh ;
+    width: 100% ;
+    overflow: hidden;
+    
+}
+
+.elem img{
+
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover;
+    scale: 1.2;
+}
+
+#page3{  
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly ;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#page3 .child{
+    
+    width: 35vw ;
+    height: 55vh ;
+    margin-top: 3vw ;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 14vw ;
+}
+
+#cursor{
+
+    height: 10vh ;
+    width: 12vw ;
+    background-color: aqua;
+    border-radius: 50% ;
+    position: absolute ;
+    z-index: 9 ;
+    opacity: 0.2;
+    scale: 0 ;
+    transform: translate(-50%,-50%);
+        
+   
+}
+
+#head{
+    position: fixed ;
+    width : 100vw ; 
+    height: 6vw ;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw ;
+    z-index: 99 ;
+}
+
+#nav-pt1{
+    line-height: 1;
+    overflow: hidden;
+    width: 100% ;
+}
+
+#nav-pt1 svg{
+    display: block ;
+    padding-bottom: 2px ;
+}
+
+
+
+
+#icons{
+
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    gap :3vh ;
+    padding: 5px 30px ;
+    border-radius: 20px ;
+    height: 5vh ;
+    background-color: #F7F7F7;
+}
+
+#navlink{
+     display: none ;
+}
+
+#navlink a{
+   
+    text-decoration: none ; 
+    color: black;
+    text-transform: capitalize;
+}
+
+
+}
